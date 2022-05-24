@@ -1,0 +1,22 @@
+// requerimos el enrutador de Express
+const { Router, response } = require('express');
+// lo estanciamos
+const router = Router();
+
+
+// Nueva ruta de la API
+
+
+router.get('/', async (req, res) => {
+    const resposne = await fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await response.json();
+    console.log(users);
+    res.send('users');
+});
+
+
+
+
+
+// Exportamos este modulo como modulo
+module.exports = router;

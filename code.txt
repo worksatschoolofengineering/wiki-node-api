@@ -1,0 +1,11 @@
+
+
+// Routes / Rutas de la API
+// index
+app.get('/', (req, res) => {
+    res.json({"Tittle": "Hello World!"});
+});
+// personajes
+app.use(require('./routes/route')); 
+// users
+
