@@ -31,3 +31,11 @@ app.use('/api/users', require('./routes/users'));
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
 });
+
+
+/*
+This is the better way to make comments in multiples
+lines of your code.
+for example caption this...
+
+*/
